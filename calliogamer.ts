@@ -1,20 +1,40 @@
 
 enum CallioGamerPin {
-    //% block="P0 (D-PAD up)"
+    //% block=" "
+    unused1 = -1,
+    //% block="P0 ▲"
     P0 = DAL.MICROBIT_ID_IO_P0,
-    //% block="P1 (D-PAD left)"
-    P1 = DAL.MICROBIT_ID_IO_P1,
-    //% block="P2 (D-PAD right)"
-    P2 = DAL.MICROBIT_ID_IO_P2,
-    //% block="P3 (D-PAD down)"
-    P3 = DAL.MICROBIT_ID_IO_P3,
-    //% block="C8"
+    //% block=" "
+    unused2 = -1,
+    //% block=" "
+    unused3 = -1,
+    //% block="C8 X"
     C8 = DAL.MICROBIT_ID_IO_P8,
-    //% block="C9"
-    C9 = DAL.MICROBIT_ID_IO_P9,
-    //% block="C13"
+    //% block=" "
+    unused4 = -1,
+    //% block="P1 ◀"
+    P1 = DAL.MICROBIT_ID_IO_P1,
+    //% block=" "
+    unused5 = -1,
+    //% block="P2 ▶"
+    P2 = DAL.MICROBIT_ID_IO_P2,
+    //% block=" "
+    unused6 = -1,
+    //% block="C13 Y"
     C13 = DAL.MICROBIT_ID_IO_P13,
-    //% block="C14"
+    //% block="C9 A"
+    C9 = DAL.MICROBIT_ID_IO_P9,
+    //% block=" "
+    unused7 = -1,
+    //% block="P3 ▼"
+    P3 = DAL.MICROBIT_ID_IO_P3,
+    //% block=" "
+    unused8 = -1,
+    //% block=" "
+    unused9 = -1,
+    //% block=" "
+    unused10 = -1,
+    //% block="C14 B"
     C14 = DAL.MICROBIT_ID_IO_P14,
 
 }
@@ -57,7 +77,7 @@ namespace calliogamer {
      */
     //% weight=89
     //% blockId=calliogamer_ispressed block="%button|is pressed"
-    //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
+    //% button.fieldEditor="gridpicker" button.fieldOptions.columns=6
     export function isPressed(button: CallioGamerPin): boolean {
         const pin = <DigitalPin><number>button;
         pins.setPull(pin, PinPullMode.PullUp);
@@ -69,7 +89,7 @@ namespace calliogamer {
      */
     //% weight=90
     //% blockId=calliogamer_onevent block="on %button|%event"
-    //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
+    //% button.fieldEditor="gridpicker" button.fieldOptions.columns=6
     //% event.fieldEditor="gridpicker" event.fieldOptions.columns=3
     export function onEvent(button: CallioGamerPin, event: CallioGamerEvent, handler: Action) {
         init();
