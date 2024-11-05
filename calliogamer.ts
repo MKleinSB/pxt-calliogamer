@@ -33,14 +33,22 @@ enum CallioGamerEvent {
 }
 
 
-//% color=#f44242 icon="\uf11b"
+//% weight=100 color=#8727B7 icon="\uf11b"
 namespace calliogamer {
-    /**
-     * 
-     */
-    //% shim=calliogamer::init
+    let initialized = false
+
     function init(): void {
-        return;
+        if (!initialized) {
+            initialized = true
+            pins.pushButton(DigitalPin.P0)
+            pins.pushButton(DigitalPin.P1)
+            pins.pushButton(DigitalPin.P2)
+            pins.pushButton(DigitalPin.P3)
+            pins.pushButton(DigitalPin.P8)
+            pins.pushButton(DigitalPin.P9)
+            pins.pushButton(DigitalPin.P13)
+            pins.pushButton(DigitalPin.P14)
+        }
     }
 
     /**
