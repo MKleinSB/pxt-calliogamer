@@ -1,7 +1,7 @@
 {
     "name": "pxt-calliogamer",
     "version": "0.0.1",
-    "description": "",
+    "description": "makecode extension for the Calliope mini Calliogamer Gamepad",
     "dependencies": {
         "core": "*",
         "v3": "*"
@@ -10,7 +10,8 @@
         "README.md",
         "main.blocks",
         "main.ts",
-        "calliogamer.ts"
+        "calliogamer.ts",
+	"_locales/de/pxt-calliogamer-strings.json"
     ],
     "testFiles": [
         "test.ts"
