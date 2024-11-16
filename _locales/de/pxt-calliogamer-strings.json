@@ -3,6 +3,5 @@
     "CallioGamerEvent.Up|block": "losgelassen",
     "CallioGamerEvent.Click|block": "geklickt",
     "calliogamer.isPressed|block": "%button|ist gedrückt",
-    "calliogamer.onEvent|block": "wenn %button|%event",
-    "{id:category}calliogamer": "CallioGamer"
+    "calliogamer.onEvent|block": "wenn %button|%event"
 }

@@ -11,7 +11,7 @@
         "main.blocks",
         "main.ts",
         "calliogamer.ts",
-	"_locales/de/pxt-calliogamer-strings.json"
+        "_locales/de/pxt-calliogamer-strings.json"
     ],
     "testFiles": [
         "test.ts"
