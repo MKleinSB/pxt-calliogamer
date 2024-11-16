@@ -1,6 +1,6 @@
 {
     "name": "pxt-calliogamer",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "makecode extension for the Calliope mini Calliogamer Gamepad",
     "dependencies": {
         "core": "*",
